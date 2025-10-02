@@ -1,6 +1,6 @@
 Gather MLB W-L data (Lahman + Baseball-Reference) and relocations
 
-This small utility helps you extract per-team-per-season win/loss records from
+This small utility helps the user extract per-team-per-season win/loss records from
 the Lahman Baseball Database `Teams.csv` and optionally annotate seasons
 relative to franchise relocations.
 
@@ -18,7 +18,3 @@ Usage
 
 3. (Optional) Provide a relocations CSV to annotate post-relocation seasons:
    python gather_mlb_wl.py --lahman Teams.csv --output annotated.csv --relocations relocations.csv
-
-Next steps
-- I can help fetch and parse Baseball-Reference pages per-team to collect official team identifiers and histories.
-- I can scrape Wikipedia team pages for relocation dates and build the relocations CSV automatically. Confirm if you want me to proceed with scraping and I'll continue.
