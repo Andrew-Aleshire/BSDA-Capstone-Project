@@ -1,0 +1,11 @@
+franchise,current_name,relocation_year,from_city,to_city,total_seasons,pre_relocation_seasons,post_relocation_seasons,pre_relocation_avg_wpct,post_relocation_avg_wpct,wpct_change,sufficient_data
+ATL,Atlanta Braves,1966,Milwaukee,Atlanta,149,90,59,0.4971777777777777,0.5216610169491526,0.02448323917137485,True
+LAD,Los Angeles Dodgers,1958,Brooklyn,Los Angeles,141,74,67,0.5151486486486486,0.54955223880597,0.03440359015732142,True
+SFG,San Francisco Giants,1958,New York,San Francisco,142,75,67,0.5536399999999999,0.5160149253731342,-0.03762507462686571,True
+OAK,Oakland Athletics,1968,Kansas City,Oakland,124,67,57,0.46377611940298513,0.5136315789473683,0.049855459544383196,True
+MIN,Minnesota Twins,1961,Washington,Minneapolis-St. Paul,124,60,64,0.46459999999999996,0.497328125,0.03272812500000005,True
+TEX,Texas Rangers,1972,Washington,Dallas-Fort Worth,64,11,53,0.4177272727272727,0.48711320754716997,0.06938593481989724,True
+BAL,Baltimore Orioles,1954,St. Louis,Baltimore,124,53,71,0.4325660377358491,0.5052957746478872,0.0727297369120381,True
+MIL,Milwaukee Brewers,1970,Seattle,Milwaukee,56,1,55,0.395,0.48929090909090905,0.09429090909090904,False
+WSN,Washington Nationals,2005,Montreal,Washington,56,36,20,0.48550000000000015,0.47990000000000005,-0.005600000000000105,True
+NYY,New York Yankees,1903,Baltimore,New York,124,2,122,0.4365,0.5693688524590165,0.13286885245901647,False
