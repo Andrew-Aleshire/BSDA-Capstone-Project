@@ -1,0 +1,32 @@
+MLB DATA QUALITY REPORT
+==================================================
+Generated: 2025-10-02 13:26:38
+
+BASIC STATISTICS:
+  Total seasons: 3,075
+  Year range: 1871 - 2024
+  Unique franchises: 120
+  Unique teams: 149
+
+TOP FRANCHISES BY SEASONS:
+  ATL: 149 seasons (Boston Red Caps)
+  CHC: 149 seasons (Chicago White Stockings)
+  CIN: 143 seasons (Cincinnati Red Stockings)
+  PIT: 143 seasons (Pittsburg Alleghenys)
+  STL: 143 seasons (St. Louis Brown Stockings)
+  SFG: 142 seasons (New York Gothams)
+  PHI: 142 seasons (Philadelphia Quakers)
+  LAD: 141 seasons (Brooklyn Atlantics)
+  MIN: 124 seasons (Washington Senators)
+  NYY: 124 seasons (Baltimore Orioles)
+
+YEAR COVERAGE ANALYSIS:
+  Years with < 8 teams: 2
+  Years with > 30 teams: 1
+  Modern era (1961+) avg teams/year: 26.8
+
+DATA QUALITY ISSUES:
+  Null values found:
+    lgID: 50
+  [PASS] Win percentage calculations accurate
+  [WARN] 74 modern seasons with unusual game counts
