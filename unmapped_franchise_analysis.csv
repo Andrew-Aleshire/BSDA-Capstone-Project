@@ -1,0 +1,111 @@
+franchise_id,recommendation,seasons,year_range,sample_names,notes
+PHQ,defunct_19th_century,2,1890-1891,Philadelphia Athletics,Defunct 19th century team
+BLT,federal_league,2,1914-1915,Baltimore Terrapins,Federal League team (1914-1915)
+LOU,defunct_19th_century,18,1882-1899,Louisville Eclipse; Louisville Colonels,Defunct 19th century team
+KCP,federal_league,2,1914-1915,Kansas City Packers,Federal League team (1914-1915)
+SYR,defunct_19th_century,1,1879-1879,Syracuse Stars,Defunct 19th century team
+ANA,review_needed,64,1961-2024,Los Angeles Angels; California Angels; Anaheim Angels,Requires manual review
+BFB,defunct_19th_century,1,1890-1890,Buffalo Bisons,Defunct 19th century team
+NNA,defunct_19th_century,5,1871-1875,New York Mutuals,Defunct 19th century team
+BFL,review_needed,2,1914-1915,Buffalo Buffeds; Buffalo Blues,Requires manual review
+IND,defunct_19th_century,3,1887-1889,Indianapolis Hoosiers,Defunct 19th century team
+DTN,defunct_19th_century,8,1881-1888,Detroit Wolverines,Defunct 19th century team
+NYI,defunct_19th_century,1,1890-1890,New York Giants,Defunct 19th century team
+NYU,defunct_19th_century,1,1876-1876,New York Mutuals,Defunct 19th century team
+KEK,defunct_19th_century,1,1871-1871,Fort Wayne Kekiongas,Defunct 19th century team
+PBS,federal_league,2,1914-1915,Pittsburgh Rebels,Federal League team (1914-1915)
+WNA,defunct_19th_century,1,1884-1884,Washington Nationals,Defunct 19th century team
+CNR,defunct_19th_century,5,1876-1880,Cincinnati Reds,Defunct 19th century team
+BRS,defunct_19th_century,2,1890-1891,Boston Reds,Defunct 19th century team
+MAN,defunct_19th_century,1,1872-1872,Middletown Mansfields,Defunct 19th century team
+BRA,defunct_19th_century,4,1872-1875,Brooklyn Atlantics,Defunct 19th century team
+ATH,defunct_19th_century,1,1876-1876,Philadelphia Athletics,Defunct 19th century team
+MLG,defunct_19th_century,1,1878-1878,Milwaukee Grays,Defunct 19th century team
+CKK,defunct_19th_century,1,1891-1891,Cincinnati Kelly's Killers,Defunct 19th century team
+NYP,defunct_19th_century,5,1883-1887,New York Metropolitans,Defunct 19th century team
+ARI,expansion_team,27,1998-2024,Arizona Diamondbacks,"Modern expansion team, no relocation"
+BRG,defunct_19th_century,1,1890-1890,Brooklyn Gladiators,Defunct 19th century team
+LGR,defunct_19th_century,2,1876-1877,Louisville Grays,Defunct 19th century team
+PRO,defunct_19th_century,8,1878-1885,Providence Grays,Defunct 19th century team
+BNA,defunct_19th_century,5,1871-1875,Boston Red Stockings,Defunct 19th century team
+CBL,defunct_19th_century,6,1879-1884,Cleveland Blues,Defunct 19th century team
+WIL,defunct_19th_century,1,1884-1884,Wilmington Quicksteps,Defunct 19th century team
+NHV,defunct_19th_century,1,1875-1875,New Haven Elm Citys,Defunct 19th century team
+CLV,defunct_19th_century,13,1887-1899,Cleveland Blues; Cleveland Spiders,Defunct 19th century team
+CFC,defunct_19th_century,2,1871-1872,Cleveland Forest Citys,Defunct 19th century team
+MLU,defunct_19th_century,1,1884-1884,Milwaukee Brewers,Defunct 19th century team
+WBL,defunct_19th_century,1,1873-1873,Washington Blue Legs,Defunct 19th century team
+KCN,defunct_19th_century,1,1886-1886,Kansas City Cowboys,Defunct 19th century team
+PWS,defunct_19th_century,3,1873-1875,Philadelphia Whites,Defunct 19th century team
+ROC,defunct_19th_century,1,1890-1890,Rochester Broncos,Defunct 19th century team
+BTT,federal_league,2,1914-1915,Brooklyn Tip-Tops,Federal League team (1914-1915)
+IBL,defunct_19th_century,1,1878-1878,Indianapolis Blues,Defunct 19th century team
+PBB,defunct_19th_century,1,1890-1890,Pittsburgh Burghers,Defunct 19th century team
+TLM,defunct_19th_century,1,1890-1890,Toledo Maumees,Defunct 19th century team
+COL,expansion_team,32,1993-2024,Colorado Rockies,"Modern expansion team, no relocation"
+CHH,federal_league,2,1914-1915,Chicago Chi-Feds; Chicago Whales,Federal League team (1914-1915)
+WES,defunct_19th_century,1,1875-1875,Keokuk Westerns,Defunct 19th century team
+CLI,defunct_19th_century,1,1890-1890,Cleveland Infants,Defunct 19th century team
+TOR,expansion_team,48,1977-2024,Toronto Blue Jays,"Modern expansion team, no relocation"
+CIN,stable_franchise,143,1882-2024,Cincinnati Red Stockings; Cincinnati Reds; Cincinnati Redlegs,"Long-standing franchise, no major relocations"
+BRD,defunct_19th_century,1,1884-1884,Boston Reds,Defunct 19th century team
+PHK,defunct_19th_century,1,1884-1884,Philadelphia Keystones,Defunct 19th century team
+MLA,defunct_19th_century,1,1891-1891,Milwaukee Brewers,Defunct 19th century team
+SYS,defunct_19th_century,1,1890-1890,Syracuse Stars,Defunct 19th century team
+WNL,defunct_19th_century,4,1886-1889,Washington Nationals,Defunct 19th century team
+CPI,defunct_19th_century,1,1884-1884,Chicago/Pittsburgh (Union League),Defunct 19th century team
+CEN,defunct_19th_century,1,1875-1875,Philadelphia Centennials,Defunct 19th century team
+OLY,defunct_19th_century,2,1871-1872,Washington Olympics,Defunct 19th century team
+CLS,defunct_19th_century,3,1889-1891,Columbus Solons,Defunct 19th century team
+HAR,defunct_19th_century,2,1876-1877,Hartford Dark Blues,Defunct 19th century team
+DET,stable_franchise,124,1901-2024,Detroit Tigers,"Long-standing franchise, no major relocations"
+CHC,stable_franchise,149,1876-2024,Chicago White Stockings; Chicago Colts; Chicago Orphans,"Long-standing franchise, no major relocations"
+SLR,defunct_19th_century,1,1875-1875,St. Louis Red Stockings,Defunct 19th century team
+TRT,defunct_19th_century,4,1879-1882,Troy Trojans,Defunct 19th century team
+KCR,expansion_team,56,1969-2024,Kansas City Royals,"Modern expansion team, no relocation"
+WSN,mapping_error,56,1969-2024,Montreal Expos; Washington Nationals,Should be mapped to WSN canonical franchise
+SDP,expansion_team,56,1969-2024,San Diego Padres,"Modern expansion team, no relocation"
+CHW,stable_franchise,124,1901-2024,Chicago White Sox,"Long-standing franchise, no major relocations"
+NYM,expansion_team,63,1962-2024,New York Mets,"Modern expansion team, no relocation"
+NAT,defunct_19th_century,1,1872-1872,Washington Nationals,Defunct 19th century team
+WST,defunct_19th_century,1,1884-1884,Washington Nationals,Defunct 19th century team
+NEW,federal_league,2,1914-1915,Indianapolis Hoosiers; Newark Pepper,Federal League team (1914-1915)
+KCU,defunct_19th_century,1,1884-1884,Kansas City Cowboys,Defunct 19th century team
+ALT,defunct_19th_century,1,1884-1884,Altoona Mountain City,Defunct 19th century team
+PNA,defunct_19th_century,5,1871-1875,Philadelphia Athletics,Defunct 19th century team
+TBD,expansion_team,27,1998-2024,Tampa Bay Devil Rays; Tampa Bay Rays,"Modern expansion team, no relocation"
+TOL,defunct_19th_century,1,1884-1884,Toledo Blue Stockings,Defunct 19th century team
+SLI,federal_league,2,1914-1915,St. Louis Terriers,Federal League team (1914-1915)
+CLE,stable_franchise,124,1901-2024,Cleveland Blues; Cleveland Bronchos; Cleveland Naps,"Long-standing franchise, no major relocations"
+FLA,expansion_team,32,1993-2024,Florida Marlins; Miami Marlins,"Modern expansion team, no relocation"
+PIT,stable_franchise,143,1882-2024,Pittsburg Alleghenys; Pittsburgh Pirates,"Long-standing franchise, no major relocations"
+BLU,defunct_19th_century,1,1884-1884,Baltimore Monumentals,Defunct 19th century team
+WNT,defunct_19th_century,1,1875-1875,Washington Nationals,Defunct 19th century team
+SLM,defunct_19th_century,3,1884-1886,St. Louis Maroons,Defunct 19th century team
+RES,defunct_19th_century,1,1873-1873,Elizabeth Resolutes,Defunct 19th century team
+CHP,defunct_19th_century,1,1890-1890,Chicago Pirates,Defunct 19th century team
+WOR,defunct_19th_century,3,1880-1882,Worcester Ruby Legs,Defunct 19th century team
+KCC,defunct_19th_century,2,1888-1889,Kansas City Cowboys,Defunct 19th century team
+SNA,defunct_19th_century,1,1875-1875,St. Louis Brown Stockings,Defunct 19th century team
+BLO,defunct_19th_century,18,1882-1899,Baltimore Orioles,Defunct 19th century team
+CBK,defunct_19th_century,2,1883-1884,Columbus Buckeyes,Defunct 19th century team
+ECK,defunct_19th_century,1,1872-1872,Brooklyn Eckfords,Defunct 19th century team
+BUF,defunct_19th_century,7,1879-1885,Buffalo Bisons,Defunct 19th century team
+BOS,stable_franchise,124,1901-2024,Boston Americans; Boston Red Sox,"Long-standing franchise, no major relocations"
+STP,defunct_19th_century,1,1884-1884,St. Paul White Caps,Defunct 19th century team
+STL,stable_franchise,143,1882-2024,St. Louis Brown Stockings; St. Louis Browns; St. Louis Perfectos,"Long-standing franchise, no major relocations"
+SEA,expansion_team,48,1977-2024,Seattle Mariners,"Modern expansion team, no relocation"
+TRO,defunct_19th_century,2,1871-1872,Troy Haymakers,Defunct 19th century team
+RIC,defunct_19th_century,1,1884-1884,Richmond Virginians,Defunct 19th century team
+HNA,defunct_19th_century,2,1874-1875,Hartford Dark Blues,Defunct 19th century team
+MAR,defunct_19th_century,1,1873-1873,Baltimore Marylands,Defunct 19th century team
+SBS,defunct_19th_century,2,1876-1877,St. Louis Brown Stockings,Defunct 19th century team
+BLC,defunct_19th_century,3,1872-1874,Baltimore Canaries,Defunct 19th century team
+SFG,review_needed,142,1883-2024,New York Gothams; New York Giants; San Francisco Giants,Requires manual review
+ROK,defunct_19th_century,1,1871-1871,Rockford Forest Citys,Defunct 19th century team
+PHI,stable_franchise,142,1883-2024,Philadelphia Quakers; Philadelphia Phillies; Philadelphia Blue Jays,"Long-standing franchise, no major relocations"
+NYY,review_needed,124,1901-2024,Baltimore Orioles; New York Highlanders; New York Yankees,Requires manual review
+BWW,defunct_19th_century,1,1890-1890,Brooklyn Ward's Wonders,Defunct 19th century team
+CNA,defunct_19th_century,3,1871-1875,Chicago White Stockings,Defunct 19th century team
+IHO,defunct_19th_century,1,1884-1884,Indianapolis Hoosiers,Defunct 19th century team
+COR,defunct_19th_century,1,1884-1884,Cincinnati Outlaw Reds,Defunct 19th century team
