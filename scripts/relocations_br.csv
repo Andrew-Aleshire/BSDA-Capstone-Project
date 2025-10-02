@@ -1,0 +1,11 @@
+franchise_br,franchID_guess,from_city,from_start,from_end,to_city,relocation_year,notes
+Los Angeles Dodgers,LAD,Brooklyn,1884,1957,Los Angeles,1958,"Brooklyn Dodgers -> Los Angeles Dodgers (1958)"
+San Francisco Giants,SFG,New York,1883,1957,San Francisco,1958,"New York Giants -> San Francisco Giants (1958)"
+Minnesota Twins,MIN,Washington,1901,1960,Minnesota,1961,"Washington Senators -> Minnesota Twins (1961)"
+Atlanta Braves,ATL,Boston,1876,1952,Milwaukee/Atlanta,1953,"Boston Braves -> Milwaukee Braves (1953); later moved to Atlanta (1966) -- see separate row"
+Atlanta Braves,ATL,Milwaukee,1953,1965,Atlanta,1966,"Milwaukee Braves -> Atlanta Braves (1966)"
+Milwaukee Brewers,MIL,Seattle,1969,1969,Milwaukee,1970,"Seattle Pilots -> Milwaukee Brewers (1970)"
+Texas Rangers,TEX,Washington,1961,1971,Texas,1972,"Washington Senators (expansion/relocated) -> Texas Rangers (1972)"
+Washington Nationals,WSN,Montreal,1969,2004,Washington,2005,"Montreal Expos -> Washington Nationals (2005)"
+The Athletics,OAK,Oakland,1968,2024,Sacramento,2025,"Oakland Athletics -> Sacramento (planned 2025 according to BR Bullpen)"
+Baltimore Orioles,BAL,St. Louis,1902,1953,Baltimore,1954,"St. Louis Browns -> Baltimore Orioles (1954)"

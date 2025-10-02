@@ -1,0 +1,17 @@
+br_name,description,lahman_franchIDs_sighted,suggested_franchIDs,notes,source_image_checked
+Los Angeles Dodgers,"Brooklyn -> Los Angeles","LAD;BRO",LAD,"Brooklyn seasons in Lahman appear with teamID BRO but franchID LAD; suggest using LAD (modern canonical)",yes
+San Francisco Giants,"New York -> San Francisco","SFG;NY1;NYI",SFG,"Suggest SFG (canonical for the Giants franchise across eras)",yes
+The Athletics,"Philadelphia -> Kansas City -> Oakland -> (Sacramento planned)","ATH;PHA;PNA;OAK",ATH;OAK,"Multiple Lahman franchise IDs appear for Athletics history. Recommend mapping all relevant IDs (ATH,PNA,PHA,OAK) to a single franchise grouping when merging. Choose canonical ID to use for output if needed.",yes
+Atlanta Braves,"Boston -> Milwaukee -> Atlanta","ATL;ML1",ATL,"Use ATL (franchID ATL covers the Braves across moves); ML1 appears as a teamID for Milwaukee-era rows",yes
+Minnesota Twins,"Washington (Senators) -> Minnesota","MIN;WAS",MIN,"Use MIN for the current franchise; earlier Senators seasons appear under other Lahman IDs (WAS variants)",yes
+Texas Rangers,"Washington (Senators) -> Texas","TEX;WAS",TEX,"The expansion/relocated Senators that became the Rangers are represented as TEX in modern Lahman rows; include any WAS-era IDs if present",yes
+Milwaukee Brewers,"Seattle Pilots -> Milwaukee Brewers","MIL;MLU;MLA;BAL",MIL,"Multiple Lahman IDs seen for Milwaukee-area teams (Brewers vs. Braves vs. Pilots). Suggest using MIL for the current Brewers franchise; review rows for collisions with Milwaukee Braves (a separate franchise, mapped to ATL)",yes
+Baltimore Orioles,"St. Louis Browns -> Baltimore","BAL;BLO;NYY;BLO",BAL,"Use BAL for modern Orioles; historical Browns rows may have different IDs (BLO etc.)",yes
+Montreal Expos / Washington Nationals,"Montreal -> Washington","WSN;WNA;WNL;WNT;NAT",WSN,"Map Expos and Nationals franchise rows to WSN (Lahman uses WSN for Nationals); include all WN* variants as needed",yes
+Brooklyn Dodgers (legacy),"Brooklyn Dodgers historical rows","LAD;BRO",LAD,"Included above as Dodgers — duplicate listing for clarity",yes
+Philadelphia Athletics (legacy),"Philadelphia Athletics historical rows","ATH;PNA;PHA;PHQ",ATH,"Historical Philadelphia Athletics entries appear under several Lahman IDs — ensure they are included when mapping Athletics moves",yes
+Milwaukee Braves (legacy),"Milwaukee Braves (same franchise as Boston/Atlanta Braves)","ATL;ML1",ATL,"This is the same franchise as Atlanta Braves; ensure ML1-era Milwaukee rows are mapped to ATL",yes
+St. Louis Browns (legacy),"St. Louis Browns -> Baltimore Orioles","BLO;BAL",BAL,"Include BLO (or BLO-era IDs) mapped to BAL for the Orioles' move",yes
+Seattle Pilots (legacy),"Seattle Pilots -> Milwaukee Brewers","MLU;MIL",MIL,"Seattle Pilots (1969) became the Milwaukee Brewers (1970). Map MLU/MLA to MIL.",yes
+Kansas City Athletics (legacy),"Kansas City Athletics -> Oakland","OAK;KCA;KC",OAK,"Kansas City Athletics rows map to OAK (historical teamID variants). Include K C-era IDs. ",yes
+Washington Senators (multiple franchises),"Note: there were two separate 'Senators' franchises (one became the Twins, one became the Rangers)","MIN;TEX;WAS;WNT","MIN;TEX","Careful: two different franchise lineages used the 'Washington Senators' name. Map each to the correct modern franchise (MIN or TEX). See notes column for specifics.",yes
