@@ -2,20 +2,20 @@
 
 A comprehensive data analytics project examining the impact of franchise relocations on Major League Baseball team performance. This project analyzes historical win-loss data to determine whether relocating franchises experience statistically significant changes in performance.
 
-## 🎯 Project Overview
+## Project Overview
 
 **Research Question:** Does franchise relocation significantly impact Major League Baseball team performance, as measured by win-loss percentage?
 
 This project provides evidence-based insights for sports organizations, investors, and municipal authorities making multi-million dollar relocation decisions by analyzing over 150 years of MLB historical data.
 
-## 📊 Key Findings
+## Key Findings
 
 - **8 out of 10** relocated franchises show performance improvements post-relocation
 - **Average improvement** of 0.050 (5 percentage points) in win percentage
 - **Most successful relocations:** Yankees (+13.3%), Brewers (+9.4%), Orioles (+7.3%)
 - **Statistical significance** confirmed through rigorous hypothesis testing
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 duo-experiment-sp/
@@ -43,7 +43,7 @@ duo-experiment-sp/
 └── lahman_box.zip                    # Lahman database archive
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -69,7 +69,7 @@ pip install pandas numpy scipy matplotlib seaborn requests jupyter
 jupyter notebook mlb_relocation_analysis.ipynb
 ```
 
-## 📈 Data Pipeline
+## Data Pipeline
 
 ### 1. Data Collection
 ```bash
@@ -94,7 +94,7 @@ The main analysis is conducted in `mlb_relocation_analysis.ipynb` which includes
 - Temporal trend analysis
 - Visualization of results
 
-## 📊 Dataset Information
+## Dataset Information
 
 **Primary Data Source:** Lahman Baseball Database (1871-2024)
 - **Coverage:** Complete MLB statistics for all teams
@@ -117,7 +117,7 @@ The main analysis is conducted in `mlb_relocation_analysis.ipynb` which includes
 | Washington Nationals | Montreal → Washington (2005) | 1969-2024 | 0.486 | 0.480 | -0.006 |
 | San Francisco Giants | New York → San Francisco (1958) | 1883-2024 | 0.554 | 0.516 | -0.038 |
 
-## 🔬 Methodology
+## Methodology
 
 ### Statistical Analysis
 - **Hypothesis Testing:** Paired t-tests for each franchise
@@ -131,7 +131,7 @@ The main analysis is conducted in `mlb_relocation_analysis.ipynb` which includes
 - **Consistency:** Standardized franchise mapping across relocations
 - **Reliability:** Cross-validation against multiple sources
 
-## 📋 Key Scripts
+## Key Scripts
 
 ### `gather_mlb_wl.py`
 Main data collection script that processes Lahman database and creates team season records.
@@ -147,7 +147,7 @@ Creates comprehensive mapping of franchise relocations with proper lineage track
 ### `data_validation.py`
 Performs comprehensive data quality checks and validation against external sources.
 
-## 📊 Results Summary
+## Results Summary
 
 ### Statistical Significance
 - **8 out of 10** franchises show positive performance changes
@@ -159,7 +159,7 @@ Performs comprehensive data quality checks and validation against external sourc
 - **Market size correlation** with relocation success
 - **Strategic recommendations** for future relocations
 
-## 🎯 Business Applications
+## Business Applications
 
 This analysis provides actionable insights for:
 - **Sports Executives:** Data-driven relocation decision making
@@ -167,27 +167,27 @@ This analysis provides actionable insights for:
 - **Investors:** Risk assessment for sports franchise investments
 - **Researchers:** Academic study of organizational change impacts
 
-## 📚 Documentation
+## Documentation
 
 - **[Project Report](MLB_Relocation_Analysis_Project_Report.md):** Comprehensive academic-style report
 - **[Pipeline Summary](DATA_PIPELINE_SUMMARY.md):** Technical documentation of data processing
 - **[Analysis Notebook](mlb_relocation_analysis.ipynb):** Interactive analysis and visualizations
 
-## 🤝 Contributing
+## Contributing
 
 This project follows academic research standards with full reproducibility. All analysis code, data processing scripts, and documentation are available for peer review and validation.
 
-## 📄 License
+## License
 
 This project uses data from the Lahman Baseball Database under Creative Commons Attribution-ShareAlike 3.0 Unported License. Analysis code and documentation are available for academic and research purposes.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Sean Lahman** for maintaining the comprehensive baseball database
 - **Baseball-Reference.com** for validation data
 - **CRISP-DM methodology** for structured data mining approach
 
-## 📞 Contact
+## Contact
 
 For questions about methodology, data sources, or findings, please refer to the comprehensive project documentation or create an issue in this repository.
 
