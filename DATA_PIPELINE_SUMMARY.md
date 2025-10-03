@@ -1,134 +1,108 @@
-# MLB Relocation Analysis Pipeline - Data Refinement Summary
+# Data Pipeline Notes
 
-## Overview
-This document summarizes the data pipeline refinements made to ensure accurate analysis of MLB team win/loss percentages before and after franchise relocations.
+## What This Does
+Explains how I cleaned up the MLB data to properly analyze team performance before and after relocations. Had to deal with a lot of messy franchise history.
 
-## Key Improvements Made
+## Main Changes
 
-### 1. Master Franchise Mapping System
-**Created:** `scripts/corrected_franchise_mapping.py`
+### 1. Fixed Franchise Mapping
+**File:** `scripts/corrected_franchise_mapping.py`
 
-**Key Features:**
-- Comprehensive mapping of all major MLB franchise relocations
-- Proper handling of complex cases (multiple relocations, league changes)
-- Exclusion of defunct 19th century teams that would skew analysis
-- Canonical franchise IDs for consistent analysis
+**What it does:**
+- Maps all the major MLB relocations correctly
+- Handles tricky cases (teams that moved multiple times, league switches)
+- Removes old defunct teams from the 1800s that would mess up the analysis
+- Creates consistent IDs so we can track teams across moves
 
-**Relocated Franchises Mapped:**
-- Atlanta Braves: Boston (1876-1952) → Milwaukee (1953-1965) → Atlanta (1966-present)
-- Los Angeles Dodgers: Brooklyn (1884-1957) → Los Angeles (1958-present)
-- San Francisco Giants: New York (1883-1957) → San Francisco (1958-present)
-- Oakland Athletics: Philadelphia (1901-1954) → Kansas City (1955-1967) → Oakland (1968-present)
-- Minnesota Twins: Washington Senators (1901-1960) → Minnesota (1961-present)
-- Texas Rangers: Washington Senators (1961-1971) → Texas (1972-present)
-- Baltimore Orioles: St. Louis Browns (1902-1953) → Baltimore (1954-present)
-- Milwaukee Brewers: Seattle Pilots (1969) → Milwaukee (1970-present)
-- Washington Nationals: Montreal Expos (1969-2004) → Washington (2005-present)
-- New York Yankees: Baltimore Orioles (1901-1902) → New York (1903-present)
+**Teams that moved:**
+- Atlanta Braves: Boston → Milwaukee → Atlanta
+- Los Angeles Dodgers: Brooklyn → Los Angeles  
+- San Francisco Giants: New York → San Francisco
+- Oakland Athletics: Philadelphia → Kansas City → Oakland
+- Minnesota Twins: Washington → Minnesota
+- Texas Rangers: Washington → Texas
+- Baltimore Orioles: St. Louis → Baltimore
+- Milwaukee Brewers: Seattle → Milwaukee
+- Washington Nationals: Montreal → Washington
+- New York Yankees: Baltimore → New York (way back in 1903)
 
-### 2. Data Validation System
-**Created:** `scripts/data_validation.py`, `scripts/validate_and_fix_data.py`
+### 2. Data Quality Checks
+**Files:** `scripts/data_validation.py`, `scripts/validate_and_fix_data.py`
 
-**Validation Checks:**
-- Basic data quality (null values, calculation accuracy)
-- Historical accuracy (reasonable year ranges, game counts)
-- Franchise continuity across relocations
-- Cross-validation against known historical facts
+**What gets checked:**
+- Missing data, calculation errors
+- Reasonable year ranges and game counts
+- Making sure franchise histories make sense
+- Cross-checking against known baseball facts
 
-**Issues Identified and Resolved:**
-- 120 unique franchise IDs reduced to 30 relevant modern franchises
-- Proper handling of Lahman database franchise ID conventions
-- Identification of 80 defunct 19th century teams excluded from analysis
-- Validation of win percentage calculations (100% accurate)
+**Problems found and fixed:**
+- Started with 120 franchise IDs, narrowed down to 30 that matter
+- Figured out how the Lahman database IDs work
+- Removed 80 old teams from the 1800s that aren't relevant
+- Double-checked all the win percentage math (it's correct)
 
-### 3. Analysis-Ready Dataset
+### 3. Clean Dataset
 **Output:** `team_seasons_analysis_ready.csv`
 
-**Features:**
-- 2,836 seasons (92.2% of original data retained)
-- 30 mapped franchises (10 relocated, 20 stable/expansion)
-- Pre/post relocation annotations
-- Years since relocation calculations
-- Canonical franchise IDs for consistent analysis
+**What's in it:**
+- 2,836 seasons (kept 92.2% of the original data)
+- 30 franchises total (10 moved, 20 stayed put or are expansion teams)
+- Marked which seasons are before/after relocations
+- Calculated years since each move
+- Consistent franchise IDs throughout
 
-## Statistical Analysis Readiness
+## Ready for Analysis
 
-### Franchises Ready for Analysis (≥10 seasons pre and post relocation):
-1. **Atlanta Braves** (1966): 90 pre + 59 post seasons
-2. **Los Angeles Dodgers** (1958): 74 pre + 67 post seasons  
-3. **San Francisco Giants** (1958): 75 pre + 67 post seasons
-4. **Oakland Athletics** (1968): 67 pre + 57 post seasons
-5. **Minnesota Twins** (1961): 60 pre + 64 post seasons
-6. **Baltimore Orioles** (1954): 53 pre + 71 post seasons
-7. **Texas Rangers** (1972): 11 pre + 53 post seasons
-8. **Washington Nationals** (2005): 36 pre + 20 post seasons
+### Teams with enough data (≥10 seasons before and after moving):
+1. **Atlanta Braves** (moved 1966): 90 seasons before + 59 after
+2. **Los Angeles Dodgers** (moved 1958): 74 before + 67 after
+3. **San Francisco Giants** (moved 1958): 75 before + 67 after
+4. **Oakland Athletics** (moved 1968): 67 before + 57 after
+5. **Minnesota Twins** (moved 1961): 60 before + 64 after
+6. **Baltimore Orioles** (moved 1954): 53 before + 71 after
+7. **Texas Rangers** (moved 1972): 11 before + 53 after
+8. **Washington Nationals** (moved 2005): 36 before + 20 after
 
-### Franchises with Insufficient Data:
-- **Milwaukee Brewers** (1970): Only 1 pre-relocation season
-- **New York Yankees** (1903): Only 2 pre-relocation seasons
+### Teams without enough data:
+- **Milwaukee Brewers** (moved 1970): Only 1 season before moving
+- **New York Yankees** (moved 1903): Only 2 seasons before moving
 
-## Win Percentage Changes Observed
+## How Teams Did After Moving
 
-| Franchise | Relocation | Pre-Relocation Avg | Post-Relocation Avg | Change |
-|-----------|------------|-------------------|-------------------|---------|
-| NYY | Baltimore → New York (1903) | 0.436 | 0.569 | +0.133 |
-| MIL | Seattle → Milwaukee (1970) | 0.395 | 0.489 | +0.094 |
-| BAL | St. Louis → Baltimore (1954) | 0.433 | 0.505 | +0.073 |
-| TEX | Washington → Texas (1972) | 0.418 | 0.487 | +0.069 |
-| OAK | Kansas City → Oakland (1968) | 0.464 | 0.514 | +0.050 |
-| LAD | Brooklyn → Los Angeles (1958) | 0.515 | 0.550 | +0.034 |
-| MIN | Washington → Minnesota (1961) | 0.465 | 0.497 | +0.033 |
-| ATL | Milwaukee → Atlanta (1966) | 0.497 | 0.522 | +0.024 |
-| WSN | Montreal → Washington (2005) | 0.486 | 0.480 | -0.006 |
-| SFG | New York → San Francisco (1958) | 0.554 | 0.516 | -0.038 |
+| Team | Move | Before | After | Change |
+|------|------|--------|-------|--------|
+| Yankees | Baltimore → New York (1903) | .436 | .569 | +.133 |
+| Brewers | Seattle → Milwaukee (1970) | .395 | .489 | +.094 |
+| Orioles | St. Louis → Baltimore (1954) | .433 | .505 | +.073 |
+| Rangers | Washington → Texas (1972) | .418 | .487 | +.069 |
+| Athletics | Kansas City → Oakland (1968) | .464 | .514 | +.050 |
+| Dodgers | Brooklyn → Los Angeles (1958) | .515 | .550 | +.034 |
+| Twins | Washington → Minnesota (1961) | .465 | .497 | +.033 |
+| Braves | Milwaukee → Atlanta (1966) | .497 | .522 | +.024 |
+| Nationals | Montreal → Washington (2005) | .486 | .480 | -.006 |
+| Giants | New York → San Francisco (1958) | .554 | .516 | -.038 |
 
-## Data Quality Metrics
+## Before and After
 
-### Before Refinement:
+### Started with:
 - 3,075 total seasons
-- 120 franchise IDs (many defunct/irrelevant)
-- Inconsistent franchise mapping
-- Missing validation
+- 120 franchise IDs (lots of old/irrelevant teams)
+- Messy franchise mapping
+- No validation
 
-### After Refinement:
-- 2,836 analysis-ready seasons (92.2% retention)
-- 30 relevant franchise IDs
-- Comprehensive franchise lineage mapping
-- Full data validation pipeline
-- 8/10 relocated franchises ready for statistical testing
+### Ended up with:
+- 2,836 clean seasons (kept 92.2%)
+- 30 relevant franchises
+- Proper franchise histories mapped out
+- Full validation pipeline
+- 8 out of 10 relocated teams ready for statistical analysis
 
-## Pipeline Files Created
+## Files Created
 
-1. **`scripts/corrected_franchise_mapping.py`** - Master franchise mapping system
-2. **`scripts/data_validation.py`** - Comprehensive validation framework
-3. **`scripts/validate_and_fix_data.py`** - Data quality analysis and fixes
-4. **`scripts/pipeline_summary.py`** - Pipeline status and recommendations
-5. **`team_seasons_analysis_ready.csv`** - Clean dataset for statistical analysis
-6. **`relocation_summary.csv`** - Summary of relocation effects
-7. **`data_quality_report.txt`** - Detailed data quality assessment
-
-## Next Steps for Statistical Analysis
-
-1. **Implement Statistical Tests:**
-   - Paired t-tests for each franchise
-   - Meta-analysis across all relocations
-   - Effect size calculations (Cohen's d)
-
-2. **Control for Confounding Variables:**
-   - Era effects (deadball era, expansion era, etc.)
-   - League differences (AL vs NL)
-   - Stadium effects (new ballparks)
-
-3. **Advanced Analysis:**
-   - Time-series analysis for temporal trends
-   - Regression analysis with multiple factors
-   - Survival analysis for sustained effects
-
-4. **Validation:**
-   - Cross-reference with historical context
-   - Sensitivity analysis
-   - Robustness checks
-
-## Conclusion
-
-The data pipeline has been significantly refined and is now ready for robust statistical analysis of MLB franchise relocation effects. The corrected franchise mapping ensures accurate lineage tracking, comprehensive validation confirms data quality, and the analysis-ready dataset provides clean, well-annotated data for testing statistical significance of relocation impacts on team performance.
+1. **`scripts/corrected_franchise_mapping.py`** - Maps franchise histories
+2. **`scripts/data_validation.py`** - Checks data quality
+3. **`scripts/validate_and_fix_data.py`** - Fixes data problems
+4. **`scripts/pipeline_summary.py`** - Shows pipeline status
+5. **`team_seasons_analysis_ready.csv`** - Clean data for analysis
+6. **`relocation_summary.csv`** - Summary of what happened to each team
+7. **`data_quality_report.txt`** - Data quality notes
