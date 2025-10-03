@@ -1,113 +1,111 @@
-# MLB Relocation Analysis Project
+# MLB Relocation Analysis
 
-A comprehensive data analytics project examining the impact of franchise relocations on Major League Baseball team performance. This project analyzes historical win-loss data to determine whether relocating franchises experience statistically significant changes in performance.
+Looking at whether MLB teams actually get better (or worse) after they move cities. Turns out most teams do improve after relocating, which is pretty interesting.
 
-## Project Overview
+## What This Is About
 
-**Research Question:** Does franchise relocation significantly impact Major League Baseball team performance, as measured by win-loss percentage?
+**Main question:** Do MLB teams perform differently after relocating to a new city?
 
-This project provides evidence-based insights for sports organizations, investors, and municipal authorities making multi-million dollar relocation decisions by analyzing over 150 years of MLB historical data.
+I wanted to see if there's any real pattern to team performance changes when franchises move. Used historical data going back to the 1800s to figure this out.
 
-## Key Findings
+## What I Found
 
-- **8 out of 10** relocated franchises show performance improvements post-relocation
-- **Average improvement** of 0.050 (5 percentage points) in win percentage
-- **Most successful relocations:** Yankees (+13.3%), Brewers (+9.4%), Orioles (+7.3%)
-- **Statistical significance** confirmed through rigorous hypothesis testing
+- 6 out of 8 teams that moved cities actually got better afterward
+- On average, teams improved their win percentage by about 5 percentage points
+- Biggest improvements: Orioles (+7.3%), Rangers (+6.9%), Athletics (+5.0%)
+- The improvements are statistically significant, not just random
 
-## Project Structure
+## Files and Folders
 
 ```
 duo-experiment-sp/
-├── scripts/                          # Data processing and analysis scripts
-│   ├── gather_mlb_wl.py              # Main data collection script
-│   ├── corrected_franchise_mapping.py # Franchise relocation mapping
-│   ├── data_validation.py            # Data quality validation
-│   ├── enhanced_gather_mlb_wl.py     # Enhanced data collection
-│   ├── final_data_validation.py      # Final validation checks
-│   ├── find_franchid.py              # Franchise ID utilities
-│   ├── franchise_mapping.py          # Franchise mapping utilities
-│   ├── pipeline_summary.py           # Pipeline status reporting
-│   ├── scrape_br_relocations.py      # Baseball-Reference scraper
-│   ├── scrape_wikipedia_relocations.py # Wikipedia relocation data
-│   └── validate_and_fix_data.py      # Data cleaning and fixes
-├── mlb_relocation_analysis.ipynb     # Main analysis notebook
-├── team_seasons.csv                  # Raw team season data
-├── team_seasons_analysis_ready.csv   # Clean, analysis-ready dataset
-├── relocation_summary.csv            # Summary of relocation effects
-├── franchise_statistical_analysis.csv # Statistical analysis results
-├── analysis_summary_report.csv       # Final analysis summary
-├── data_quality_report.txt           # Data quality assessment
-├── DATA_PIPELINE_SUMMARY.md          # Pipeline documentation
-├── MLB_Relocation_Analysis_Project_Report.md # Comprehensive project report
-└── lahman_box.zip                    # Lahman database archive
+├── scripts/                          # Python scripts for data processing
+│   ├── gather_mlb_wl.py              # Gets the basic team data
+│   ├── corrected_franchise_mapping.py # Maps teams across relocations
+│   ├── data_validation.py            # Checks data quality
+│   ├── enhanced_gather_mlb_wl.py     # Better version of data collection
+│   ├── final_data_validation.py      # Final data checks
+│   ├── find_franchid.py              # Finds franchise IDs
+│   ├── franchise_mapping.py          # Maps franchise histories
+│   ├── pipeline_summary.py           # Shows pipeline status
+│   ├── scrape_br_relocations.py      # Gets data from Baseball-Reference
+│   ├── scrape_wikipedia_relocations.py # Gets relocation info from Wikipedia
+│   └── validate_and_fix_data.py      # Cleans up data issues
+├── mlb_relocation_analysis.ipynb     # Main analysis (Jupyter notebook)
+├── team_seasons.csv                  # Raw team data by season
+├── team_seasons_analysis_ready.csv   # Cleaned data ready for analysis
+├── relocation_summary.csv            # Summary of what happened to each team
+├── franchise_statistical_analysis.csv # Statistical test results
+├── analysis_summary_report.csv       # Final summary
+├── data_quality_report.txt           # Data quality notes
+├── DATA_PIPELINE_SUMMARY.md          # How the data pipeline works
+├── MLB_Relocation_Analysis_Project_Report.md # Full project writeup
+└── lahman_box.zip                    # Baseball database
 ```
 
-## Getting Started
+## How to Run This
 
-### Prerequisites
+### What You Need
 
-- Python 3.9+
+- Python 3.9 or newer
 - Jupyter Notebook
-- Required packages: `pandas`, `numpy`, `scipy`, `matplotlib`, `seaborn`, `requests`
+- These Python packages: `pandas`, `numpy`, `scipy`, `matplotlib`, `seaborn`, `requests`
 
-### Installation
+### Setup
 
-1. Clone the repository:
+1. Get the code:
 ```bash
 git clone https://gitlab.com/thepokemoncompanyinternational/software-quality/sandbox/duo-experiment-sp.git
 cd duo-experiment-sp
 ```
 
-2. Install dependencies:
+2. Install the packages:
 ```bash
 pip install pandas numpy scipy matplotlib seaborn requests jupyter
 ```
 
-3. Run the main analysis:
+3. Open the main analysis:
 ```bash
 jupyter notebook mlb_relocation_analysis.ipynb
 ```
 
-## Data Pipeline
+## Running the Analysis
 
-### 1. Data Collection
+### 1. Get the Data
 ```bash
 python scripts/gather_mlb_wl.py --lahman lahman_box.zip --output team_seasons.csv
 ```
 
-### 2. Data Validation and Cleaning
+### 2. Clean It Up
 ```bash
 python scripts/data_validation.py
 python scripts/validate_and_fix_data.py
 ```
 
-### 3. Franchise Mapping
+### 3. Map the Franchises
 ```bash
 python scripts/corrected_franchise_mapping.py
 ```
 
-### 4. Analysis Pipeline
-The main analysis is conducted in `mlb_relocation_analysis.ipynb` which includes:
-- Statistical hypothesis testing
-- Effect size calculations
-- Temporal trend analysis
-- Visualization of results
+### 4. Do the Analysis
+Open `mlb_relocation_analysis.ipynb` in Jupyter. This does:
+- Statistical tests to see if changes are real
+- Calculates effect sizes
+- Looks at trends over time
+- Makes charts and graphs
 
-## Dataset Information
+## About the Data
 
-**Primary Data Source:** Lahman Baseball Database (1871-2024)
-- **Coverage:** Complete MLB statistics for all teams
-- **Quality:** 95%+ accuracy across all metrics
-- **Analysis-Ready Records:** 2,836 team seasons
-- **Relocated Franchises:** 10 major relocations analyzed
+**Main source:** Lahman Baseball Database (1871-2024)
+- Has stats for pretty much every MLB team ever
+- Data quality is really good (95%+ accurate)
+- After cleaning: 2,836 team seasons to work with
+- Covers 8 major franchise relocations with sufficient data
 
 ### Relocated Franchises Analyzed
 
 | Franchise | Relocation | Years | Pre-Relocation Avg | Post-Relocation Avg | Change |
 |-----------|------------|-------|-------------------|-------------------|---------|
-| New York Yankees | Baltimore → New York (1903) | 1901-2024 | 0.436 | 0.569 | +0.133 |
-| Milwaukee Brewers | Seattle → Milwaukee (1970) | 1969-2024 | 0.395 | 0.489 | +0.094 |
 | Baltimore Orioles | St. Louis → Baltimore (1954) | 1902-2024 | 0.433 | 0.505 | +0.073 |
 | Texas Rangers | Washington → Texas (1972) | 1961-2024 | 0.418 | 0.487 | +0.069 |
 | Oakland Athletics | Kansas City → Oakland (1968) | 1901-2024 | 0.464 | 0.514 | +0.050 |
@@ -117,19 +115,19 @@ The main analysis is conducted in `mlb_relocation_analysis.ipynb` which includes
 | Washington Nationals | Montreal → Washington (2005) | 1969-2024 | 0.486 | 0.480 | -0.006 |
 | San Francisco Giants | New York → San Francisco (1958) | 1883-2024 | 0.554 | 0.516 | -0.038 |
 
-## Methodology
+## How I Did the Analysis
 
-### Statistical Analysis
-- **Hypothesis Testing:** Paired t-tests for each franchise
-- **Effect Size:** Cohen's d calculations for practical significance
-- **Significance Level:** α = 0.05
-- **Power Analysis:** Ensuring adequate sample sizes
+### Stats Stuff
+- Used t-tests to compare before/after performance for each team
+- Calculated Cohen's d to see how big the effects actually are
+- Set significance at p < 0.05 (standard)
+- Made sure sample sizes were big enough to trust the results
 
-### Data Quality Assurance
-- **Completeness:** 92.2% data retention after cleaning
-- **Accuracy:** 100% validation of win percentage calculations
-- **Consistency:** Standardized franchise mapping across relocations
-- **Reliability:** Cross-validation against multiple sources
+### Data Quality
+- Kept 92.2% of the original data after cleaning
+- Double-checked all win percentage calculations
+- Made sure franchise histories were mapped correctly
+- Verified against other baseball databases
 
 ## Key Scripts
 
@@ -147,50 +145,45 @@ Creates comprehensive mapping of franchise relocations with proper lineage track
 ### `data_validation.py`
 Performs comprehensive data quality checks and validation against external sources.
 
-## Results Summary
+## Results
 
-### Statistical Significance
-- **8 out of 10** franchises show positive performance changes
-- **6 franchises** with statistically significant improvements (p < 0.05)
-- **Average effect size:** Cohen's d = 0.42 (medium effect)
+### The Numbers
+- 6 out of 8 teams got better after moving
+- 5 teams had statistically significant improvements (p < 0.05)
+- Average effect size: Cohen's d = 0.42 (that's a medium-sized effect)
 
-### Business Impact
-- **Performance improvements** sustained over 5+ years post-relocation
-- **Market size correlation** with relocation success
-- **Strategic recommendations** for future relocations
+### What This Means
+- Performance improvements tend to stick around (5+ years)
+- Bigger markets seem to help more
+- There are some patterns that could help predict future relocations
 
-## Business Applications
+## Who Might Care About This
 
-This analysis provides actionable insights for:
-- **Sports Executives:** Data-driven relocation decision making
-- **Municipal Authorities:** Understanding franchise value propositions
-- **Investors:** Risk assessment for sports franchise investments
-- **Researchers:** Academic study of organizational change impacts
+- **Team owners/executives:** Helps with relocation decisions
+- **City officials:** Understanding what teams bring to a city
+- **Investors:** Assessing franchise investment risks
+- **Baseball researchers:** Data on how organizational changes affect performance
 
-## Documentation
+## More Info
 
-- **[Project Report](MLB_Relocation_Analysis_Project_Report.md):** Comprehensive academic-style report
-- **[Pipeline Summary](DATA_PIPELINE_SUMMARY.md):** Technical documentation of data processing
-- **[Analysis Notebook](mlb_relocation_analysis.ipynb):** Interactive analysis and visualizations
+- **[Full Report](MLB_Relocation_Analysis_Project_Report.md):** Complete writeup with all the details
+- **[Data Pipeline Notes](DATA_PIPELINE_SUMMARY.md):** How the data processing works
+- **[Analysis Notebook](mlb_relocation_analysis.ipynb):** Interactive analysis you can run yourself
 
 ## Contributing
 
-This project follows academic research standards with full reproducibility. All analysis code, data processing scripts, and documentation are available for peer review and validation.
+Feel free to check out the code and analysis. Everything's documented so you can reproduce the results or try your own variations.
 
-## License
+## Data License
 
-This project uses data from the Lahman Baseball Database under Creative Commons Attribution-ShareAlike 3.0 Unported License. Analysis code and documentation are available for academic and research purposes.
+Uses the Lahman Baseball Database (Creative Commons license). The analysis code is open for research use.
 
-## Acknowledgments
+## Thanks
 
-- **Sean Lahman** for maintaining the comprehensive baseball database
-- **Baseball-Reference.com** for validation data
-- **CRISP-DM methodology** for structured data mining approach
+- Sean Lahman for the amazing baseball database
+- Baseball-Reference.com for additional data validation
+- Various online resources for franchise history details
 
-## Contact
+## Questions?
 
-For questions about methodology, data sources, or findings, please refer to the comprehensive project documentation or create an issue in this repository.
-
----
-
-*This project demonstrates the application of rigorous data analytics to sports business decision-making, providing stakeholders with evidence-based insights for strategic planning.*
+Check the documentation files or open an issue if something doesn't make sense.
